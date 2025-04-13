@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>
+      Homepage
+   </title>
+   <style>
+      header {
+         width: 99.9%;
+         height: 50px;
+         float: left;
+         box-sizing: border-box;
+
+      }
+
+
+      body {
+         padding: 0;
+         margin: 0;
+      }
+
+      #brand {
+         padding: 0;
+         margin: 0;
+         float: left;
+         font-family: sans-serif;
+         padding-left: 20px;
+      }
+
+      #tag_line {
+         float: right;
+         margin-top: 10px;
+         font-family: century gothic;
+         padding-right: 20px;
+      }
+
+      nav {
+         width: 99.9%;
+         height: 105px;
+         background-color: blue;
+         float: left;
+         box-sizing: border-box;
+         padding: 30px;
+         padding-bottom: 0px;
+      }
+
+      #search {
+         width: 200px;
+         height: 40px;
+         box-sizing: border-box;
+         float: left;
+         border: none;
+         font-size: 15px;
+         padding: 15px;
+      }
+
+      #submit {
+         width: 100px;
+         height: 40px;
+         float: left;
+         box-sizing: border-box;
+         border: none;
+         margin-left: 3px;
+      }
+
+      #menu_table {
+         width: 600px;
+         height: 40px;
+         float: right;
+         box-sizing: border-box;
+      }
+
+      #menu_item {
+         background-color: white;
+         width: 20%;
+         text-align: center;
+      }
+
+      a {
+         text-decoration: none;
+         color: black;
+         font-family: sans serif;
+      }
+
+      section {
+         width: 99.8%;
+         height: 1300px;
+         float: left;
+
+         box-sizing: border-box;
+         padding: 20px;
+      }
+
+      #V {
+         float: left;
+         font-size: 15px;
+         font-family: sans-serif;
+      }
+
+      #O {
+         float: right;
+         font-size: 15px;
+         font-family: sans-serif;
+      }
+
+      #Popular_Box {
+         width: 600px;
+         height: 300px;
+         float: left;
+         box-sizing: border-box;
+         border-style: solid;
+         border-width: 1px;
+         background-color: black;
+         margin-top: 30px;
+         padding: 7px;
+      }
+
+      #Our_title {
+         text-align: center;
+         color: white;
+         font-size: 26Px;
+         font-family: sans-serif;
+         padding: 0;
+         margin: 0;
+      }
+
+      #Popular_images {
+         width: 170px;
+         height: 100px;
+         box-sizing: border-box;
+         margin: 10px;
+         border-width: 3px;
+         border-style: solid;
+         border-color: white;
+      }
+
+      #Sweets_rate_box {
+         width: 300px;
+         height: 300px;
+         float: right;
+         box-sizing: border-box;
+         margin-top: 30px;
+      }
+
+      #rate_header {
+         height: 50px;
+         background-color: black;
+         color: white;
+         text-align: center;
+         font-family: century gothic;
+         font-size: 20px;
+      }
+
+      #rate_content {
+         background-color: blue;
+      }
+
+      #s_name {
+         color: white;
+         font-family: century gothic;
+         font-size: 22px;
+         padding: 7px;
+         border-bottom-width: 1.5px;
+         border-bottom-color: white;
+         border-bottom-style: solid;
+      }
+
+      #rate {
+         list-style: none;
+      }
+
+      fieldset {
+         width: 570px;
+         height: 520px;
+         float: left;
+         margin-top: 50px;
+         border-width: 1px;
+         border-style: solid;
+         border-color: #ccc;
+         padding: 10px;
+      }
+
+      legend {
+         font-family: century-gothic;
+         font-size: 30px;
+         font-weight: bold;
+      }
+
+      #Order_Online {
+         font-size: 17px;
+         font-family: sans-serif;
+      }
+
+      #order_input {
+         width: 100%;
+         height: 35px;
+         box-sizing: border-box;
+         border-style: solid;
+         border-color: #ccc;
+         margin-top: 5px;
+      }
+
+      textarea {
+         width: 100%;
+         height: 100px;
+         box-sizing: border-box;
+         border-width: 10x;
+         border-style: solid;
+         border-color: #ccc;
+      }
+
+      #order_now {
+         padding: 10px;
+         font-size: 15px;
+         float: right;
+      }
+
+      #about_us {
+         width: 500px;
+         height: 485px;
+         border-width: 1px;
+         border-style: solid;
+         border-color: #ccc;
+         float: right;
+         margin-top: 65px;
+         padding: 20px;
+      }
+
+      #abt_title {
+         text-align: center;
+         font-size: 30px;
+         font-family: century-gothic;
+         padding: 0px;
+         margin: 0px
+      }
+
+      #abt_text {
+         text-align: justify;
+
+         line-height: px;
+         font-family: century-gothic;
+      }
+
+      #M_sweets {
+         width: 100%;
+         float: left;
+         box-sizing: border-box;
+      }
+
+      #More_Sweets {
+         text-align: center;
+         font-family: century gothic;
+         font-size: 30px;
+         margin-left: 50PX;
+      }
+
+      #flower {
+         width: 210px;
+         height: 215px;
+         border-width: 1px;
+         border-color: #ccc;
+         border-style: solid;
+         float: left;
+         margin-right: 30px;
+      }
+
+      #flower_end {
+         width: 200px;
+         height: 215px;
+         border-width: 1px;
+         border-color: #ccc;
+         border-style: solid;
+         float: left;
+      }
+
+      #sweets_buy {
+         width: 210px;
+         height: 180px;
+      }
+
+      #Buy_Now {
+         text-align: center;
+         margin-left: 55px;
+         font-size: 20px;
+         background-color: green;
+         color: black;
+         border: none;
+         margin-bottom: 5px;
+      }
+
+      #sweets_buy_end {
+         width: 199.9px;
+         height: 180px;
+      }
+
+      footer {
+         width: 99.8%;
+         height: 250px;
+         border-width: 1px;
+         border-color: white;
+         border-style: solid;
+         background-color: black;
+         float: left;
+      }
+
+      #contect_us {
+         width: 440px;
+         height: 250px;
+         box-sizing: border-box;
+         float: left;
+         padding: 10px;
+         padding-left: 30px;
+
+      }
+
+      #social_link {
+         width: 220px;
+         height: 200px;
+         box-sizing: border-box;
+         float: right;
+      }
+
+      #contect_title {
+         color: white;
+         font-family: century-gothic;
+         font-size: 30px
+      }
+
+      #Contact_details {
+         color: white;
+         font-size: 20px;
+         font-family: sans-serif;
+         font-style: normal;
+         line-height: 30px;
+      }
+
+      #Follow_title {
+         color: white;
+      }
+
+      #social_logo {
+         width: 60px;
+         margin: 5px;
+
+      }
+
+      #Developed {
+         color: white;
+         float: left;
+         font-family: century gothic;
+         margin-top: 220px;
+         margin-left: 100px;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1 id="brand">Sweetshop.com</h1>
+      <p id="tag_line">The world's largest Sweets & bakeries shop</p>
+   </header>
+
+   <nav>
+      <form>
+         <input id="search" type="search" name="ramanand" placeholder="search your sweet here" align="center">
+         <input id="submit" type="submit" value="search">
+      </form>
+
+      <table id="menu_table">
+         <tr>
+            <td id="menu_item"><a href="index.html">Home</a></td>
+            <td id="menu_item"><a href="sweets.html">Sweets</a></td>
+            <td id="menu_item"><a href="#">Bakeries</a></td>
+            <td id="menu_item"><a href="#about_us">About us</a></td>
+            <td id="menu_item"><a href="#contect_us">Contact us</a></td>
+         </tr>
+      </table>
+
+   </nav>
+
+   <section>
+      <address id="V">Vill-Chorha, Bodhgaya, gaya, Bihar - 824231</address>
+      <address id="O">Order Online : +91 7870403385, +91 8580641440</address>
+      <div id="Popular_Box">
+         <h1 id="Our_title">Our Popular Sweets</h1>
+         <a href="#flower"><img src="Images/a.jpg" alt="a" id="Popular_images"></a>
+         <a href="#flower"><img src="Images/b.jpg" alt="b" id="Popular_images"></a>
+         <a href="#flower"><img src="Images/c.jpg" alt="c" id="Popular_images"></a>
+         <a href="#flower"><img src="Images/d.jpg" alt="d" id="Popular_images"></a>
+         <a href="#flower"><img src="Images/e.jpg" alt="e" id="Popular_images"></a>
+         <a href="#flower"><img src="Images/f.jpg" alt="f" id="Popular_images"></a>
+      </div>
+      <table id="Sweets_rate_box">
+         <tr>
+            <td id="rate_header">Sweet Name</td>
+            <td id="rate_header">Sweet Price</td>
+         </tr>
+
+         <tr id="rate_content">
+            <td>
+               <ol>
+                  <a href="#flower">
+                     <li id="s_name">Laddo</li>
+                  </a>
+                  <a href="#flower">
+                     <li id="s_name">Barfee</li>
+                  </a>
+                  <a href="#flower">
+                     <li id="s_name">Rashulla</li>
+                  </a>
+                  <a href="#flower">
+                     <li id="s_name">Chhena</li>
+                  </a>
+                  <a href="#flower">
+                     <li id="s_name">Bundiya</li>
+                  </a>
+               </ol>
+            </td>
+            <td>
+               <ol id="rate">
+                  <li id="s_name">200/kg</li>
+                  <li id="s_name">250/kg</li>
+                  <li id="s_name">300/kg</li>
+                  <li id="s_name">200/kg</li>
+                  <li id="s_name">150/kg</li>
+               </ol>
+            </td>
+         </tr>
+      </table>
+
+      <fieldset id="form_Open">
+         <legend>Order Online</legend>
+         <form id="Order_Online">
+            Buyer Name <br>
+            <input type="text" name="name" id="order_input"><br><br>
+            Mobile No.<br>
+            <input type="number" name="mobile" id="order_input"><br><br>
+            Choose Sweets <br>
+            <select name="choose sweets">
+               <option value="--Choose Sweets--">--Choose Sweets--</option>
+               <option value="Chhena">chhena</option>
+               <option value="Bundiya">Bundiya</option>
+               <option value="Barfee">Barfee</option>
+               <option value="Laddo">Laddo</option>
+               <option value="Rashulla">Rashulla</option>
+            </select><br><br>
+            Quantity<br>
+            <input type="text" Name="Quantity" id="order_input"><br><br>
+            Address<br>
+            <textarea name="address"></textarea>
+            <br><br>
+            <input type="submit" value="Order Now!" id="order_now">
+
+         </form>
+      </fieldset>
+
+      <div id="about_us">
+         <h1 id="abt_title"> About us</h1>
+         <hr>
+         <p id="abt_text">
+            On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your
+            document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other
+            document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your
+            current document look.
+            You can easily change the formatting of selected text in the document text by choosing a look for the
+            selected text from the Quick Styles gallery on the Home tab. You can also format text directly by using the
+            other controls on the Home tab. Most controls offer a choice of using the look from the current theme or
+            using a format that you specify directly.
+            To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change the
+            looks available in the Quick Style gallery, use the Change Current Quick Style Set command. Both the Themes
+            gallery and the Quick Styles gallery provide reset commands so that you can always restore the look of your
+            document to the original contained in your current template.
+            To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change the
+            looks available in the Quick Style gallery, use the Change Current Quick Style Set command. Both the Themes
+            gallery and the Quick Styles gallery provide reset commands so that you can always restore the look of your
+            document to the original contained in your current template.
+
+         </p>
+      </div>
+
+      <div id="M_sweets">
+         <h1 id="More_Sweets" align="center">More Sweets</h1>
+      </div>
+
+      <div id="flower">
+         <img src="Images/a.jpg" id="sweets_buy">
+         <a href="#form_Open"><button id="Buy_Now">Buy Now!</button></a>
+      </div>
+      <div id="flower">
+         <img src="Images/b.jpg" id="sweets_buy">
+         <a href="#form_Open"><button id="Buy_Now">Buy Now!</button></a>
+      </div>
+      <div id="flower">
+         <img src="Images/c.jpg" id="sweets_buy">
+         <a href="#form_Open"><button id="Buy_Now">Buy Now!</button></a>
+      </div>
+      <div id="flower">
+         <img src="Images/d.jpg" id="sweets_buy">
+         <a href="#form_Open"><button id="Buy_Now">Buy Now!</button></a>
+      </div>
+      <div id="flower_end">
+         <img src="Images/e.jpg" id="sweets_buy_end">
+         <a href="#form_Open"><button id="Buy_Now">Buy Now!</button></a>
+      </div>
+   </section>
+
+   <footer>
+      <div id="contect_us">
+         <h1 id="contect_title">Contect us</h1>
+         <address Id="Contact_details">website : sweetshop.com</Address>
+         <Address Id="Contact_details">phone no : +91 7870403385</Address>
+         <Address Id="Contact_details">email id : ramanand78kumar70@gmail.com</Address>
+         <Address Id="Contact_details">Address : Bodhgaya Gaya Bihar</Address>
+      </div>
+      <div id="Developed">Developed By : Ramanand kumar</div>
+      <div id="social_link">
+         <h1 id="Follow_title">Follow us</h1>
+         <a href="https://www.linkedin.com/in/ramanand-kumar-2a10b0315/"><img src="Images/L.png" id="social_logo"></a>
+         <a href="https://x.com/Ramanan90882721"><img src="Images/T.png" id="social_logo"></a>
+
+         <a href=""><img src="Images/F.png" id="social_logo"></a>
+      </div>
+   </footer>
+
+
+</body>
+
+</html>
