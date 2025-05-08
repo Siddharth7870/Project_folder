@@ -21,13 +21,13 @@ void displayMenu()
     cout << "4. Control Lights\n";
     cout << "5. Control Fan\n";
     cout << "6. Automatic Plant Watering\n";
+    cout << "7. Exit\n";
     cout << "Choose an option: ";
 }
 
 // Method to control door 
 void controlDoor()
 {
-    name;
     cout << "\nControl for Door Status!\n";
     
     for (int attemp = 3; attemp > 0; attemp--) 
@@ -52,10 +52,9 @@ void controlDoor()
 void controlTemperature()
 {
     cout << "\nControl Room Temperature!\n";
-    temperature;
     cout << "Set Room Temperature: ";
     cin >> temperature;
-    cout << "Room temperature set to: " << temperature << "\n";
+    cout << "Room temperature set to: " << temperature << "°C\n";
 }
 
 // Method to control Robot
@@ -68,8 +67,7 @@ void controlRobot()
     cout << "E: Eat\n";
     cout << "C: Clean\n";
     cout << "T: Tea\n";
-    
-    work;
+ 
     cout << "What do you want the robot to do? ";
     cin >> work;
 
@@ -93,7 +91,6 @@ void controlRobot()
 // Method to control lights 
 void controlLights(  )
 {
-    option;
     cout << "\nControl Light Status!\n";
     //int option;
     cout << "0: OFF\n";
@@ -154,6 +151,7 @@ int main()
             case 4: system.controlLights(); break;
             case 5: system.controlFan(); break;
             case 6: system.controlPlantWatering(); break;
+            case 7: cout<<"Exiting Smart Home System. Goodbye!\n"; return 0;
             default: cout << "Invalid choice! Please try again.\n";
         }
     }
